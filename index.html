@@ -74,9 +74,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(247,247,245,.93);backdrop-
 .hero-form{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:26px;box-shadow:var(--sh);position:sticky;top:76px}
 .hf-title{font-size:.93rem;font-weight:600;color:var(--ink);margin-bottom:4px}
 .hf-urgent{display:flex;align-items:center;gap:7px;font-size:.74rem;font-weight:600;color:var(--cta-h);margin-bottom:10px;letter-spacing:.01em}
-.dot-live{width:8px;height:8px;border-radius:50%;background:var(--cta);flex-shrink:0;animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
-@media(prefers-reduced-motion:reduce){.dot-live{animation:none}}
+.dot-live{width:8px;height:8px;border-radius:50%;background:var(--cta);flex-shrink:0}
 .hf-sub{font-size:.79rem;color:var(--ink3);margin-bottom:18px}
 .field{margin-bottom:11px}
 .field label{display:block;font-size:.75rem;font-weight:500;color:var(--ink2);margin-bottom:4px;letter-spacing:.02em}
@@ -94,7 +92,7 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 .form-note{text-align:center;font-size:.75rem;color:var(--ink3);margin-top:9px}
 .form-ok{display:none;text-align:center;padding:20px 0}
 .form-ok-ico{width:44px;height:44px;border-radius:50%;background:#DCFCE7;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
-.form-ok h4{font-size:.92rem;font-weight:600;margin-bottom:6px}
+.form-ok h3{font-size:.92rem;font-weight:600;margin-bottom:6px}
 .form-ok p{font-size:.81rem;color:var(--ink3);line-height:1.6}
 
 /* BAND */
@@ -180,8 +178,9 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 .faq-q{width:100%;background:none;border:none;padding:16px 0;text-align:left;font-family:'Inter',sans-serif;font-size:.91rem;font-weight:500;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;line-height:1.45}
 .faq-q svg{flex-shrink:0;transition:transform .2s;color:var(--ink3)}
 .faq-item.open .faq-q svg{transform:rotate(45deg);color:var(--cta)}
-.faq-a{font-size:.86rem;color:var(--ink2);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .25s ease,padding-bottom .25s}
-.faq-item.open .faq-a{max-height:360px;padding-bottom:16px}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .2s ease}
+.faq-item.open .faq-a{grid-template-rows:1fr;padding-bottom:16px}
+.faq-a-i{overflow:hidden;font-size:.86rem;color:var(--ink2);line-height:1.8}
 
 /* CONTACTO */
 .calt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
@@ -308,7 +307,7 @@ footer{background:var(--ink);padding:36px 24px}
       <div class="form-ok-ico">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
       </div>
-      <h4>Pedido enviado!</h4>
+      <h3>Pedido enviado!</h3>
       <p>Respondemos em menos de 24 horas.<br>Pode também contactar pelo WhatsApp.</p>
     </div>
     <form id="main-form" novalidate onsubmit="submitForm(event)">
@@ -540,31 +539,31 @@ footer{background:var(--ink);padding:36px 24px}
   <div class="faq-wrap">
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Preciso de arquitecto para licenciar obras?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Sim, para a maioria das obras. Qualquer intervenção que altere a estrutura, fachada, área útil ou uso do imóvel precisa de projecto de arquitectura assinado por um arquitecto inscrito na Ordem e de aprovação da Câmara. Obras de conservação simples (pintura, troca de revestimentos) geralmente não precisam. Com o DL 108/2026 algumas obras de reconstrução fiel passaram a estar isentas de licença ou comunicação prévia — avaliamos caso a caso.</div>
+      <div class="faq-a"><div class="faq-a-i">Sim, para a maioria das obras. Qualquer intervenção que altere a estrutura, fachada, área útil ou uso do imóvel precisa de projecto de arquitectura assinado por um arquitecto inscrito na Ordem e de aprovação da Câmara. Obras de conservação simples (pintura, troca de revestimentos) geralmente não precisam. Com o DL 108/2026 algumas obras de reconstrução fiel passaram a estar isentas de licença ou comunicação prévia — avaliamos caso a caso.</div></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Quanto custa um licenciamento?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Depende do tipo e da complexidade do caso. Apresentamos sempre uma proposta com valor fechado após a avaliação gratuita. O valor contratado é o valor final. Inclui projecto, coordenação de especialidades e acompanhamento junto da Câmara.</div>
+      <div class="faq-a"><div class="faq-a-i">Depende do tipo e da complexidade do caso. Apresentamos sempre uma proposta com valor fechado após a avaliação gratuita. O valor contratado é o valor final. Inclui projecto, coordenação de especialidades e acompanhamento junto da Câmara.</div></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Quanto tempo demora um licenciamento na Câmara?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Depende do tipo de processo e do município. Com o novo RJUE (DL 108/2026) existem três modalidades: licença, comunicação prévia e comunicação prévia com prazo. Os procedimentos de comunicação prévia são mais rápidos; licenças de obras demoram tipicamente vários meses. Em zonas de protecção patrimonial os prazos são mais longos. Acompanhamos de perto para evitar que o processo fique parado.</div>
+      <div class="faq-a"><div class="faq-a-i">Depende do tipo de processo e do município. Com o novo RJUE (DL 108/2026) existem três modalidades: licença, comunicação prévia e comunicação prévia com prazo. Os procedimentos de comunicação prévia são mais rápidos; licenças de obras demoram tipicamente vários meses. Em zonas de protecção patrimonial os prazos são mais longos. Acompanhamos de perto para evitar que o processo fique parado.</div></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Tenho obras feitas sem licença. Consigo regularizar?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Na maioria dos casos sim, desde que a obra respeite o PDM e os regulamentos do município. Há situações que não são regularizáveis e é importante identificá-las antes de incorrer em custos desnecessários. A avaliação inicial é gratuita e clarifica o que é possível fazer.</div>
+      <div class="faq-a"><div class="faq-a-i">Na maioria dos casos sim, desde que a obra respeite o PDM e os regulamentos do município. Há situações que não são regularizáveis e é importante identificá-las antes de incorrer em custos desnecessários. A avaliação inicial é gratuita e clarifica o que é possível fazer.</div></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">O que é uma alteração de uso?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">É quando muda a finalidade de um espaço: loja para habitação, garagem para escritório, armazém para apartamentos. Cada caso precisa de licença própria na Câmara, e há concelhos onde o PDM limita ou impede essa mudança. Avaliamos as possibilidades antes de iniciar o processo.</div>
+      <div class="faq-a"><div class="faq-a-i">É quando muda a finalidade de um espaço: loja para habitação, garagem para escritório, armazém para apartamentos. Cada caso precisa de licença própria na Câmara, e há concelhos onde o PDM limita ou impede essa mudança. Avaliamos as possibilidades antes de iniciar o processo.</div></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Preciso de autorização do condomínio?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Depende do tipo de obra. Intervenções que afectem partes comuns — fachada, estrutura, cobertura — precisam geralmente de aprovação em assembleia de condóminos. Obras interiores que não toquem partes comuns não precisam. A Câmara pode exigir a acta de aprovação do condomínio como documento do processo. Na avaliação inicial identificamos o que é necessário no seu caso específico.</div>
+      <div class="faq-a"><div class="faq-a-i">Depende do tipo de obra. Intervenções que afectem partes comuns — fachada, estrutura, cobertura — precisam geralmente de aprovação em assembleia de condóminos. Obras interiores que não toquem partes comuns não precisam. A Câmara pode exigir a acta de aprovação do condomínio como documento do processo. Na avaliação inicial identificamos o que é necessário no seu caso específico.</div></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Como funciona a avaliação gratuita?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Basta preencher o formulário ou enviar mensagem pelo WhatsApp. Analisamos o imóvel, a localização e o que o PDM permite, e respondemos em 24 horas com o que é possível fazer. Sem qualquer custo ou compromisso.</div>
+      <div class="faq-a"><div class="faq-a-i">Basta preencher o formulário ou enviar mensagem pelo WhatsApp. Analisamos o imóvel, a localização e o que o PDM permite, e respondemos em 24 horas com o que é possível fazer. Sem qualquer custo ou compromisso.</div></div>
     </div>
   </div>
 </section>

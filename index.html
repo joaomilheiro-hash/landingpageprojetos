@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arquitecto Lisboa — Licenciamento de Obras | Bruno Câmara Arquitectos</title>
+<meta name="description" content="Licenciamento de obras, regularização e projecto de arquitectura em Lisboa e Grande Lisboa. Avaliação gratuita do seu caso. Bruno Câmara Arquitectos.">
+
+<!-- GTM -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NHL7C5GF');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-14ML2BMY5K"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-14ML2BMY5K');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F9F9F7;
+  --white:#FFFFFF;
+  --ink:#0F1117;
+  --ink2:#3D3D3D;
+  --ink3:#595959;
+  --border:#E4E4E0;
+  --border2:#CDCDC8;
+  --accent:#1B3A6B;
+  --accent-h:#122C55;
+  --accent-light:#EEF2F9;
+  --wa:#0D7A38;
+  --wa-badge:#25D366;
+  --warn:#F59E0B;
+  --r:10px;
+  --max:1060px;
+  --sh:0 1px 4px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.06);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:400;color:var(--ink);background:var(--bg);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:100;background:rgba(249,249,247,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav-i{max-width:var(--max);margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-phone{font-size:.82rem;color:var(--ink2);display:flex;align-items:center;gap:6px}
+.nav-phone svg{color:var(--ink3)}
+.btn-nav{background:var(--accent);color:#fff;border:none;padding:9px 18px;border-radius:6px;font-size:.8rem;font-weight:500;cursor:pointer;white-space:nowrap;transition:background .18s}
+.btn-nav:hover{background:var(--accent-h)}
+@media(max-width:520px){.nav-phone{display:none}}
+
+/* ── HERO ── */
+.hero{max-width:var(--max);margin:0 auto;padding:64px 24px 72px}
+.hero-kw{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.kw-tag{font-size:.7rem;font-weight:500;letter-spacing:.06em;padding:4px 10px;border-radius:20px;border:1px solid var(--border2);color:var(--ink3);background:var(--white)}
+.hero h1{font-size:clamp(1.9rem,4.5vw,3rem);font-weight:600;line-height:1.15;letter-spacing:-.03em;color:var(--ink);max-width:740px;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-sub{font-size:1rem;font-weight:400;color:var(--ink2);max-width:560px;margin-bottom:32px;line-height:1.7}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:28px}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border:none;padding:14px 26px;border-radius:8px;font-size:.95rem;font-weight:500;cursor:pointer;transition:background .18s}
+.btn-primary:hover{background:var(--accent-h)}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;border:none;padding:14px 26px;border-radius:8px;font-size:.95rem;font-weight:500;cursor:pointer;transition:opacity .18s}
+.btn-wa:hover{opacity:.88}
+.btn-ghost{display:inline-flex;align-items:center;gap:6px;background:transparent;color:var(--ink2);border:1px solid var(--border2);padding:13px 20px;border-radius:8px;font-size:.9rem;font-weight:400;cursor:pointer;transition:border-color .18s}
+.btn-ghost:hover{border-color:var(--ink3)}
+.hero-trust{display:flex;flex-wrap:wrap;gap:20px}
+.ht{display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--ink3)}
+.ht svg{color:var(--accent);flex-shrink:0}
+.ht strong{color:var(--ink2);font-weight:500}
+
+/* ── CONCELHOS ── */
+.concelhos{background:var(--accent);padding:14px 24px}
+.concelhos-i{max-width:var(--max);margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.concelhos-label{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-right:4px;white-space:nowrap}
+.concelho-pill{font-size:.75rem;color:rgba(255,255,255,.8);background:rgba(255,255,255,.12);padding:3px 10px;border-radius:20px}
+
+/* ── SECTIONS ── */
+.section{max-width:var(--max);margin:0 auto;padding:72px 24px}
+.sec-label{font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.sec-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:600;line-height:1.22;letter-spacing:-.025em;margin-bottom:12px}
+.sec-sub{font-size:.95rem;color:var(--ink2);max-width:540px;line-height:1.7;margin-bottom:48px}
+.bg-white{background:var(--white)}
+.bg-light{background:var(--bg)}
+.bg-accent{background:var(--accent)}
+.divider{border:none;border-top:1px solid var(--border);margin:0}
+
+/* ── CASOS ── */
+.casos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.caso-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:22px 20px;cursor:pointer;transition:border-color .18s,box-shadow .18s}
+.caso-card:hover{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
+.caso-card.active{border-color:var(--accent);background:var(--accent-light)}
+.caso-ico{width:36px;height:36px;background:var(--accent-light);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--accent)}
+.caso-card h3{font-size:.88rem;font-weight:600;line-height:1.35;margin-bottom:6px;color:var(--ink)}
+.caso-card p{font-size:.78rem;color:var(--ink3);line-height:1.55}
+
+/* ── PROCESSO ── */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:var(--white)}
+.step{padding:28px 24px;border-right:1px solid var(--border)}
+.step:last-child{border-right:none}
+.step-n{font-size:.76rem;font-weight:700;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;margin-bottom:12px}
+.step h3{font-size:.9rem;font-weight:600;margin-bottom:8px;color:var(--ink)}
+.step p{font-size:.8rem;color:var(--ink3);line-height:1.6}
+.step-time{display:inline-block;margin-top:12px;font-size:.76rem;font-weight:500;background:var(--accent-light);color:var(--accent);padding:3px 8px;border-radius:4px}
+@media(max-width:700px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.steps{grid-template-columns:1fr}}
+
+/* ── PREÇO ── */
+.preco-box{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:36px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;margin-top:40px}
+.preco-item{flex:1;min-width:180px}
+.preco-val{font-size:2rem;font-weight:600;letter-spacing:-.04em;color:var(--accent)}
+.preco-val span{font-size:1rem;font-weight:400;color:var(--ink3)}
+.preco-label{font-size:.82rem;color:var(--ink2);margin-top:4px}
+.preco-inc{margin-top:20px}
+.preco-inc-title{font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink3);margin-bottom:10px}
+.inc-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.inc-list li{font-size:.82rem;color:var(--ink2);display:flex;align-items:flex-start;gap:8px}
+.inc-list li::before{content:"✓";color:var(--accent);font-weight:600;flex-shrink:0;margin-top:1px}
+.preco-note{font-size:.75rem;color:var(--ink3);margin-top:16px;line-height:1.5}
+
+/* ── PROVA SOCIAL ── */
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.review-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:24px}
+.review-stars{color:#F59E0B;font-size:.9rem;margin-bottom:10px;letter-spacing:2px}
+.review-text{font-size:.88rem;color:var(--ink2);line-height:1.65;margin-bottom:14px;font-style:italic}
+.review-author{font-size:.78rem;font-weight:600;color:var(--ink)}
+.review-source{font-size:.76rem;color:var(--ink3)}
+.stats-row{display:flex;flex-wrap:wrap;gap:32px;margin-bottom:48px}
+.stat{min-width:120px}
+.stat-val{font-size:2rem;font-weight:600;letter-spacing:-.04em;color:var(--accent)}
+.stat-lbl{font-size:.78rem;color:var(--ink3);margin-top:2px}
+
+/* ── FAQ ── */
+.faq-list{max-width:700px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;padding:18px 0;text-align:left;font-family:'Inter',sans-serif;font-size:.93rem;font-weight:500;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;line-height:1.45}
+.faq-q svg{flex-shrink:0;transition:transform .22s;color:var(--ink3)}
+.faq-item.open .faq-q svg{transform:rotate(45deg);color:var(--accent)}
+.faq-a{font-size:.87rem;color:var(--ink2);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .28s ease,padding .28s}
+.faq-item.open .faq-a{max-height:400px;padding-bottom:18px}
+
+/* ── CONTACT ── */
+.contact-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.contact-info h3{font-size:1.3rem;font-weight:600;line-height:1.25;letter-spacing:-.02em;margin-bottom:14px}
+.contact-info p{font-size:.9rem;color:var(--ink2);line-height:1.7;margin-bottom:30px}
+.clinks{display:flex;flex-direction:column;gap:10px}
+.clink{display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;border:1px solid var(--border);background:var(--white);font-size:.86rem;color:var(--ink);transition:border-color .18s}
+.clink:hover{border-color:var(--border2)}
+.clink-wa{border-color:#B7E5C5;background:#F4FEF8}
+.clink-wa:hover{border-color:var(--wa)}
+.clink-ico{width:34px;height:34px;border-radius:7px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent)}
+.clink-wa .clink-ico{background:#DCF5E8;color:var(--wa)}
+.clink-text strong{display:block;font-weight:500;font-size:.84rem}
+.clink-text span{font-size:.76rem;color:var(--ink3)}
+
+/* ── FORM ── */
+.form-box{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:32px;box-shadow:var(--sh)}
+.form-box h3{font-size:1rem;font-weight:600;margin-bottom:6px}
+.form-box .form-sub{font-size:.8rem;color:var(--ink3);margin-bottom:24px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.76rem;font-weight:500;color:var(--ink2);margin-bottom:5px;letter-spacing:.02em}
+.fi{width:100%;border:1px solid var(--border);border-radius:6px;padding:10px 13px;font-family:'Inter',sans-serif;font-size:.88rem;color:var(--ink);background:#fff;outline:none;transition:border-color .18s}
+.fi:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
+textarea.fi{resize:vertical;min-height:80px}
+select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' stroke='%23767676' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;-webkit-appearance:none;cursor:pointer}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:460px){.field-row{grid-template-columns:1fr}}
+.rgpd{display:flex;align-items:flex-start;gap:9px;margin-bottom:18px}
+.rgpd input{margin-top:3px;flex-shrink:0;accent-color:var(--accent)}
+.rgpd label{font-size:.78rem;color:var(--ink3);line-height:1.5}
+.rgpd a{color:var(--ink2);text-decoration:underline}
+.btn-submit{width:100%;background:var(--accent);color:#fff;border:none;padding:13px;border-radius:8px;font-family:'Inter',sans-serif;font-size:.93rem;font-weight:500;cursor:pointer;transition:background .18s}
+.btn-submit:hover{background:var(--accent-h)}
+.btn-submit:disabled{opacity:.45;cursor:not-allowed}
+.form-ok{display:none;text-align:center;padding:28px 0}
+.form-ok h4{font-size:1rem;font-weight:600;margin-bottom:6px}
+.form-ok p{font-size:.85rem;color:var(--ink3)}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);color:rgba(255,255,255,.45);padding:40px 24px}
+.ft-i{max-width:var(--max);margin:0 auto}
+.ft-top{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:24px}
+.ft-brand{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.28)}
+.ft-links{display:flex;gap:20px;flex-wrap:wrap}
+.ft-link{font-size:.8rem;color:rgba(255,255,255,.38);transition:color .18s}
+.ft-link:hover{color:rgba(255,255,255,.7)}
+.ft-copy{font-size:.7rem;color:rgba(255,255,255,.22)}
+
+/* ── FLOAT ── */
+.float-wa{position:fixed;bottom:22px;right:22px;z-index:200;width:52px;height:52px;border-radius:50%;background:var(--wa);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,.38);transition:transform .2s,box-shadow .2s}
+.float-wa:hover{transform:scale(1.07)}
+
+/* ── FOCUS VISIBLE ── */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button:focus-visible,a:focus-visible{border-radius:4px}
+.fi:focus-visible{outline:none}
+
+/* ── REDUCED MOTION ── */
+@media(prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:680px){
+  .contact-wrap{grid-template-columns:1fr;gap:36px}
+  .preco-box{gap:28px}
+  .hero{padding:48px 20px 56px}
+  .section{padding:56px 20px}
+  .concelhos-i{gap:6px}
+}
+@media(max-width:480px){
+  .hero h1{font-size:1.75rem}
+  .btn-primary,.btn-wa{padding:13px 20px;font-size:.88rem}
+  .stats-row{gap:20px}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHL7C5GF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-i">
+    <a class="nav-logo" href="#">Bruno Câmara Arquitectos</a>
+    <div class="nav-right">
+      <a href="tel:+351913164920" class="nav-phone">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.04z"/></svg>
+        +351 913 164 920
+      </a>
+      <a href="#contacto" class="btn-nav" onclick="ev('nav_cta')">Avaliação gratuita</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-kw">
+    <span class="kw-tag">Arquitecto Lisboa</span>
+    <span class="kw-tag">Licenciamento de Obras</span>
+    <span class="kw-tag">Regularização</span>
+    <span class="kw-tag">Alteração de Uso</span>
+  </div>
+  <h1>Legalizamos a sua obra ou<br><em>alteração de uso</em> junto da Câmara.</h1>
+  <p class="hero-sub">Tratamos de todo o processo junto das Câmaras Municipais da Grande Lisboa — preparamos a documentação, submetemos e acompanhamos até à aprovação final.</p>
+  <div class="hero-ctas">
+    <a href="#contacto" class="btn-primary" onclick="ev('hero_cta')">
+      Pedir avaliação gratuita do meu caso
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="https://wa.me/351913164920?text=Olá!%20Gostaria%20de%20uma%20avaliação%20gratuita%20do%20meu%20caso%20de%20licenciamento." class="btn-wa" target="_blank" onclick="ev('hero_wa')">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+  <div class="hero-trust">
+    <span class="ht"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><strong>Membros da Ordem dos Arquitectos</strong></span>
+    <span class="ht"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Resposta em 24 horas</span>
+    <span class="ht"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Avaliação gratuita e sem compromisso</span>
+  </div>
+</section>
+
+<!-- CONCELHOS -->
+<div class="concelhos">
+  <div class="concelhos-i">
+    <span class="concelhos-label">Concelhos</span>
+    <span class="concelho-pill">Lisboa</span>
+    <span class="concelho-pill">Sintra</span>
+    <span class="concelho-pill">Cascais</span>
+    <span class="concelho-pill">Oeiras</span>
+    <span class="concelho-pill">Amadora</span>
+    <span class="concelho-pill">Odivelas</span>
+    <span class="concelho-pill">Loures</span>
+    <span class="concelho-pill">Mafra</span>
+    <span class="concelho-pill">Torres Vedras</span>
+    <span class="concelho-pill">Ericeira</span>
+  </div>
+</div>
+
+<!-- CASOS -->
+<div class="bg-white">
+<section class="section">
+  <p class="sec-label">O seu caso</p>
+  <h2 class="sec-title">O seu caso é um destes?</h2>
+  <p class="sec-sub">Identificamos o tipo de processo certo para cada situação e tratamos de tudo — sem necessitar de perceber a burocracia da Câmara.</p>
+  <div class="casos-grid">
+
+    <div class="caso-card">
+      <div class="caso-ico">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h3>Loja ou garagem para habitação</h3>
+      <p>Quer converter um espaço comercial ou garagem em apartamento ou T1.</p>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-ico">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <h3>Obras feitas sem licença</h3>
+      <p>Realizou obras sem aprovação da Câmara e precisa de regularizar a situação.</p>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-ico">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <h3>Obra parada pela Câmara</h3>
+      <p>O processo foi suspendido ou recebeu pedido de elementos adicionais e não sabe como avançar.</p>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-ico">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      </div>
+      <h3>Ampliação ou remodelação</h3>
+      <p>Quer ampliar a área útil, abrir vãos ou remodelar alterando estrutura ou fachada.</p>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-ico">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      </div>
+      <h3>Licença de utilização</h3>
+      <p>Precisa de obter ou regularizar a licença de utilização para poder arrendar, vender ou escriturar.</p>
+    </div>
+
+  </div>
+</section>
+</div>
+
+<hr class="divider">
+
+<!-- PROCESSO -->
+<div class="bg-light">
+<section class="section">
+  <p class="sec-label">Como funciona</p>
+  <h2 class="sec-title">Do primeiro contacto à aprovação final</h2>
+  <p class="sec-sub">Quatro passos com prazos realistas — sem surpresas a meio do processo.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-n">Passo 01</div>
+      <h3>Avaliação gratuita</h3>
+      <p>Analisamos a sua situação — imóvel, PDM, condicionantes. Confirmamos a viabilidade antes de avançar.</p>
+      <span class="step-time">1–3 dias</span>
+    </div>
+    <div class="step">
+      <div class="step-n">Passo 02</div>
+      <h3>Proposta e contrato</h3>
+      <p>Apresentamos proposta com honorários fixos, prazo estimado e o que está incluído. Sem custos escondidos.</p>
+      <span class="step-time">1 semana</span>
+    </div>
+    <div class="step">
+      <div class="step-n">Passo 03</div>
+      <h3>Projecto e submissão</h3>
+      <p>Preparamos toda a documentação técnica e submetemos o pedido na Câmara Municipal.</p>
+      <span class="step-time">4–8 semanas</span>
+    </div>
+    <div class="step">
+      <div class="step-n">Passo 04</div>
+      <h3>Acompanhamento</h3>
+      <p>Gerimos o processo junto da Câmara até à decisão final, respondendo a qualquer pedido de elementos.</p>
+      <span class="step-time">3–8 meses</span>
+    </div>
+  </div>
+
+  <!-- O QUE ESTÁ INCLUÍDO -->
+  <div class="preco-box">
+    <div class="preco-inc">
+      <div class="preco-inc-title">Incluído no serviço</div>
+      <ul class="inc-list">
+        <li>Projecto de arquitectura completo</li>
+        <li>Coordenação de especialidades (estrutural, térmica, acústica)</li>
+        <li>Submissão e acompanhamento na Câmara Municipal</li>
+        <li>Resposta a pedidos de elementos adicionais</li>
+        <li>Comunicação regular sobre o estado do processo</li>
+      </ul>
+    </div>
+    <div class="preco-inc">
+      <div class="preco-inc-title">Como é calculado o custo</div>
+      <ul class="inc-list">
+        <li>Proposta com valor fixo após avaliação gratuita do caso</li>
+        <li>Sem custos escondidos — sabem o total antes de avançar</li>
+        <li>O custo depende do tipo de processo e da complexidade</li>
+      </ul>
+      <p class="preco-note">Avaliação gratuita e sem compromisso. Respondemos em 24 horas.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- PROVA SOCIAL -->
+<div class="bg-white">
+<section class="section">
+  <p class="sec-label">Clientes</p>
+  <h2 class="sec-title">O que dizem os nossos clientes</h2>
+  <div class="stats-row">
+    <div class="stat">
+      <div class="stat-val">15+</div><!-- ⚠ CONFIRMAR ANOS DE EXPERIÊNCIA -->
+      <div class="stat-lbl">Anos de experiência</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">4.8★</div><!-- ⚠ CONFIRMAR RATING REAL (GOOGLE/ZAASK) -->
+      <div class="stat-lbl">Avaliação média</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">OA</div>
+      <div class="stat-lbl">Membro da Ordem dos Arquitectos</div>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <!-- ⚠ SUBSTITUIR PELOS TESTEMUNHOS REAIS DO ZAASK / GOOGLE -->
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Testemunho real a preencher. Contactar Zaask para exportar reviews ou copiar do Google Business."</p>
+      <div class="review-author">Nome do Cliente</div>
+      <div class="review-source">Zaask · Licenciamento</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Segundo testemunho real a preencher."</p>
+      <div class="review-author">Nome do Cliente</div>
+      <div class="review-source">Google · Lisboa</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Terceiro testemunho real a preencher."</p>
+      <div class="review-author">Nome do Cliente</div>
+      <div class="review-source">Zaask · Regularização</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<div class="bg-light">
+<section class="section">
+  <p class="sec-label">Dúvidas frequentes</p>
+  <h2 class="sec-title">Perguntas frequentes</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Preciso de arquitecto para licenciar obras?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Sim, para a maioria das obras. Qualquer intervenção que altere a estrutura, fachada, área útil ou uso do imóvel exige projecto de arquitectura assinado por arquitecto inscrito na Ordem dos Arquitectos e aprovação da Câmara Municipal. Obras de conservação simples (pintura, substituição de revestimentos) podem não precisar.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Quanto custa licenciar um projecto de arquitectura?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Os honorários dependem do tipo e complexidade do processo. Para processos de comunicação prévia (obras mais simples) os valores partem de 1.500€. Para licenciamentos completos com especialidades, os valores típicos situam-se entre 3.000€ e 8.000€. Apresentamos sempre proposta fechada antes de iniciar — sem surpresas.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Quanto tempo demora um licenciamento na Câmara?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Depende do tipo de processo e do município. Comunicações prévias (obras mais simples) são geralmente decididas em 20 dias úteis. Pedidos de licença de obras demoram tipicamente 3 a 8 meses. Em zonas de proteção patrimonial (ARU, DGPC) os prazos podem ser mais longos. Mantemos o processo em acompanhamento activo para evitar atrasos.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Tenho obras feitas sem licença. É possível regularizar?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Na maioria dos casos sim, desde que a obra cumpra as regras do PDM e regulamentos municipais. O processo chama-se regularização ou licenciamento de obras em situação de ilegalidade. Fazemos uma avaliação gratuita de viabilidade antes de qualquer compromisso — há situações que não são regularizáveis e é importante saber isso logo.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">O que é uma alteração de uso e quando preciso dela?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Uma alteração de uso é quando muda a função de um espaço — por exemplo, converter uma loja em habitação, uma garagem em escritório, ou um armazém em apartamentos. Este processo exige licenciamento específico na Câmara Municipal e, em muitos concelhos, está condicionado ao PDM vigente. Analisamos a viabilidade antes de avançar.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Trabalham em toda a Grande Lisboa?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Sim. Trabalhamos em Lisboa, Sintra, Cascais, Oeiras, Amadora, Odivelas, Loures, Mafra, Torres Vedras e Ericeira. Temos experiência com os PDM e regulamentos de cada município, o que evita erros que atrasam o processo.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Como funciona a avaliação gratuita?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Preenchem o formulário ou contactam-nos pelo WhatsApp. Analisamos o caso — o imóvel, localização, condicionantes do PDM e o que é legalmente possível — e respondemos em 24 horas com o diagnóstico e os próximos passos. Não há qualquer custo nem obrigação.</div>
+    </div>
+
+  </div>
+</section>
+</div>
+
+<!-- CONTACTO -->
+<div class="bg-white" id="contacto">
+<section class="section">
+  <p class="sec-label">Contacto</p>
+  <h2 class="sec-title">Peça a avaliação gratuita do seu caso</h2>
+  <div class="contact-wrap">
+
+    <div class="contact-info">
+      <h3>Respondemos em menos de 24 horas.</h3>
+      <p>Conte-nos a situação — o tipo de obra, a morada do imóvel e o que pretende fazer. Não precisa de saber a resposta certa, é para isso que estamos aqui.</p>
+      <div class="clinks">
+        <a href="https://wa.me/351913164920?text=Olá!%20Gostaria%20de%20uma%20avaliação%20gratuita%20do%20meu%20caso%20de%20licenciamento." class="clink clink-wa" target="_blank" onclick="ev('contact_wa')">
+          <span class="clink-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></span>
+          <span class="clink-text"><strong>WhatsApp Business</strong><span>+351 913 164 920 · resposta imediata</span></span>
+        </a>
+        <a href="tel:+351913164920" class="clink" onclick="ev('contact_call')">
+          <span class="clink-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.04z"/></svg></span>
+          <span class="clink-text"><strong>Chamada telefónica</strong><span>+351 913 164 920</span></span>
+        </a>
+        <a href="mailto:invest@brunocamaraarquitectos.com" class="clink" onclick="ev('contact_email')">
+          <span class="clink-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+          <span class="clink-text"><strong>Email</strong><span style="word-break:break-all">invest@brunocamaraarquitectos.com</span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <h3>Avaliação gratuita do meu caso</h3>
+      <p class="form-sub">Resposta em 24 horas · Sem compromisso</p>
+      <div id="form-ok" class="form-ok">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="1.8" style="margin-bottom:12px"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h4>Pedido enviado!</h4>
+        <p>Respondemos em menos de 24 horas.<br>Pode também contactar-nos pelo WhatsApp.</p>
+      </div>
+      <form id="main-form" onsubmit="submitForm(event)">
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">Nome *</label>
+            <input class="fi" type="text" id="f-name" placeholder="O seu nome" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-tel">Telefone *</label>
+            <input class="fi" type="tel" id="f-tel" placeholder="+351 9xx xxx xxx" required autocomplete="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-email">Email *</label>
+          <input class="fi" type="email" id="f-email" placeholder="o.seu@email.com" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-tipo">Tipo de situação *</label>
+          <select class="fi" id="f-tipo" required>
+            <option value="">Seleccione...</option>
+            <option value="loja-habitacao">Converter loja/garagem em habitação</option>
+            <option value="obras-sem-licenca">Regularizar obras feitas sem licença</option>
+            <option value="obra-parada">Obra parada/recusada pela Câmara</option>
+            <option value="ampliacao">Ampliação ou remodelação com licença</option>
+            <option value="licenca-utilizacao">Obter licença de utilização</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Descreva o seu caso</label>
+          <textarea class="fi" id="f-msg" placeholder="Ex: Tenho uma loja no rés do chão em Sintra e quero converter em habitação. A loja tem 65m². Há condições?"></textarea>
+        </div>
+        <div class="rgpd">
+          <input type="checkbox" id="f-rgpd" required>
+          <label for="f-rgpd">Aceito a <a href="#">Política de Privacidade</a> e autorizo o contacto para resposta a esta solicitação.</label>
+        </div>
+        <button type="submit" class="btn-submit" id="btn-submit">Pedir avaliação gratuita</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-i">
+    <div class="ft-top">
+      <span class="ft-brand">Bruno Câmara Arquitectos</span>
+      <div class="ft-links">
+        <a href="tel:+351913164920" class="ft-link">+351 913 164 920</a>
+        <a href="mailto:invest@brunocamaraarquitectos.com" class="ft-link">invest@brunocamaraarquitectos.com</a>
+        <a href="https://wa.me/351913164920" class="ft-link" target="_blank" style="color:#25D366">WhatsApp</a>
+      </div>
+    </div>
+    <span class="ft-copy">© 2026 Bruno Câmara Arquitectos · Membro da Ordem dos Arquitectos · Lisboa, Portugal</span>
+  </div>
+</footer>
+
+<!-- FLOAT WA -->
+<button class="float-wa" onclick="window.open('https://wa.me/351913164920?text=Olá!%20Gostaria%20de%20uma%20avaliação%20gratuita%20do%20meu%20caso.','_blank');ev('float_wa')" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</button>
+
+<script>
+function faq(btn){
+  const it=btn.closest('.faq-item'),was=it.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!was)it.classList.add('open');
+}
+
+async function submitForm(e){
+  e.preventDefault();
+  const btn=document.getElementById('btn-submit');
+  btn.disabled=true;btn.textContent='A enviar...';
+  const payload={
+    name:document.getElementById('f-name').value.trim(),
+    email:document.getElementById('f-email').value.trim(),
+    phone:document.getElementById('f-tel').value.trim(),
+    project_type:document.getElementById('f-tipo').value,
+    message:document.getElementById('f-msg').value.trim()
+  };
+  try{
+    const r=await fetch('https://ejpfafkbqakcydoemfce.supabase.co/rest/v1/leads',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqcGZhZmticWFrY3lkb2VtZmNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgxNDk3MTQsImV4cCI6MjA5MzcyNTcxNH0.FOQWBUCZu90j4nQPN5OeExdbdRwuP4iimckv5Bf1yaQ',
+        'Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqcGZhZmticWFrY3lkb2VtZmNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgxNDk3MTQsImV4cCI6MjA5MzcyNTcxNH0.FOQWBUCZu90j4nQPN5OeExdbdRwuP4iimckv5Bf1yaQ',
+        'Prefer':'return=minimal'
+      },
+      body:JSON.stringify(payload)
+    });
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    ev('form_submit_licenciamento');
+    document.getElementById('main-form').style.display='none';
+    document.getElementById('form-ok').style.display='block';
+  }catch(err){
+    btn.disabled=false;btn.textContent='Pedir avaliação gratuita';
+    alert('Ocorreu um erro. Por favor contacte-nos directamente pelo WhatsApp.');
+  }
+}
+
+function ev(n){if(window.dataLayer)window.dataLayer.push({event:n});}
+const sf={};
+window.addEventListener('scroll',()=>{
+  const p=Math.round(scrollY/(document.body.scrollHeight-innerHeight)*100);
+  [25,50,75,100].forEach(d=>{if(p>=d&&!sf[d]){sf[d]=true;ev('scroll_'+d);}});
+},{passive:true});
+</script>
+</body>
+</html>

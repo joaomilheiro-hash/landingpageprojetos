@@ -161,6 +161,19 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 .btn-wa-inv{display:inline-flex;align-items:center;gap:8px;background:var(--cta);color:#fff;border:none;padding:12px 20px;border-radius:8px;font-size:.87rem;font-weight:600;cursor:pointer;transition:opacity .15s}
 @media(hover:hover){.btn-wa-inv:hover{opacity:.88}}
 
+/* REVIEWS */
+.fixando-bar{display:inline-flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:10px 16px;margin-bottom:32px}
+.fixando-score{font-size:1.35rem;font-weight:700;color:var(--ink);letter-spacing:-.03em;line-height:1}
+.fixando-stars{color:#F59E0B;font-size:.88rem;letter-spacing:2px;display:block;margin-bottom:2px}
+.fixando-lbl{font-size:.73rem;color:var(--ink3)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.rev{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:18px 20px}
+.rev-stars{color:#F59E0B;font-size:.8rem;letter-spacing:2px;margin-bottom:10px}
+.rev-tag{font-size:.73rem;color:var(--ink3);margin-bottom:12px;line-height:1.5}
+.rev-meta strong{display:block;font-size:.83rem;font-weight:600;color:var(--ink)}
+.rev-meta span{font-size:.74rem;color:var(--ink3)}
+@media(max-width:700px){.reviews-grid{grid-template-columns:1fr}}
+
 /* FAQ */
 .faq-wrap{max-width:680px;margin-top:40px}
 .faq-item{border-bottom:1px solid var(--border)}
@@ -486,6 +499,39 @@ footer{background:var(--ink);padding:36px 24px}
   </div>
 </div>
 
+<!-- REVIEWS -->
+<div class="bg-light">
+<section class="section" aria-labelledby="reviews-h">
+  <p class="s-ey">Clientes reais</p>
+  <h2 class="s-title" id="reviews-h">O que dizem no <em>Fixando</em></h2>
+  <p class="s-sub">Serviços concluídos na Grande Lisboa, com avaliação verificada pela plataforma.</p>
+  <div class="fixando-bar" aria-label="Classificação Fixando: 5 estrelas em 3 serviços">
+    <div class="fixando-score">5.0</div>
+    <div>
+      <span class="fixando-stars" aria-hidden="true">★★★★★</span>
+      <span class="fixando-lbl">Fixando · 3 serviços concluídos</span>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="rev">
+      <div class="rev-stars" aria-label="5 estrelas" aria-hidden="true">★★★★★</div>
+      <p class="rev-tag">Alteração de uso · loja para habitação · Agualva, Sintra</p>
+      <div class="rev-meta"><strong>Felício D.</strong><span>Sintra · Setembro 2026</span></div>
+    </div>
+    <div class="rev">
+      <div class="rev-stars" aria-label="5 estrelas" aria-hidden="true">★★★★★</div>
+      <p class="rev-tag">Regularização de obra · alteração à planta com inspeção · Oeiras</p>
+      <div class="rev-meta"><strong>Margarida M.</strong><span>Oeiras · Agosto 2026</span></div>
+    </div>
+    <div class="rev">
+      <div class="rev-stars" aria-label="5 estrelas" aria-hidden="true">★★★★★</div>
+      <p class="rev-tag">Legalização · conversão de loja em apartamento · São Marcos, Sintra</p>
+      <div class="rev-meta"><strong>Artur A.</strong><span>Sintra · Agosto 2026</span></div>
+    </div>
+  </div>
+</section>
+</div>
+
 <!-- FAQ -->
 <div class="bg-white">
 <section class="section" aria-labelledby="faq-h">
@@ -511,6 +557,10 @@ footer{background:var(--ink);padding:36px 24px}
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">O que é uma alteração de uso?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
       <div class="faq-a">É quando muda a finalidade de um espaço: loja para habitação, garagem para escritório, armazém para apartamentos. Cada caso precisa de licença própria na Câmara, e há concelhos onde o PDM limita ou impede essa mudança. Avaliamos o que é possível antes de avançar.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)" aria-expanded="false">Preciso de autorização do condomínio?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a">Depende do tipo de obra. Intervenções que afectem partes comuns — fachada, estrutura, cobertura — precisam geralmente de aprovação em assembleia de condóminos. Obras interiores que não toquem partes comuns não precisam. A Câmara pode exigir a acta de aprovação do condomínio como documento do processo. Na avaliação inicial identificamos o que é necessário no seu caso específico.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Como funciona a avaliação gratuita?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>

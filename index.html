@@ -26,6 +26,8 @@
   --accent-light:#EBF0F8;
   --wa:#0D7A38;
   --wa-light:#E8F5EC;
+  --cta:#16A34A;
+  --cta-h:#15803D;
   --r:8px;
   --max:1080px;
   --sh:0 1px 3px rgba(0,0,0,.06),0 6px 20px rgba(0,0,0,.09);
@@ -41,8 +43,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(247,247,245,.93);backdrop-
 .nav-logo{font-size:.76rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink)}
 .nav-right{display:flex;align-items:center;gap:10px}
 .nav-phone{font-size:.82rem;color:var(--ink2);display:flex;align-items:center;gap:5px;white-space:nowrap}
-.btn-nav{background:var(--accent);color:#fff;border:none;padding:8px 16px;border-radius:6px;font-size:.8rem;font-weight:500;cursor:pointer;white-space:nowrap;transition:background .15s}
-.btn-nav:hover{background:var(--accent-h)}
+.btn-nav{background:var(--cta);color:#fff;border:none;padding:8px 16px;border-radius:6px;font-size:.8rem;font-weight:500;cursor:pointer;white-space:nowrap;transition:background .15s}
+.btn-nav:hover{background:var(--cta-h)}
 @media(max-width:520px){.nav-phone{display:none}}
 
 /* HERO */
@@ -77,8 +79,8 @@ select.fi{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
 .rgpd input{margin-top:3px;flex-shrink:0;accent-color:var(--accent)}
 .rgpd label{font-size:.76rem;color:var(--ink3);line-height:1.5}
 .rgpd a{color:var(--ink2);text-decoration:underline}
-.btn-submit{width:100%;background:var(--accent);color:#fff;border:none;padding:13px 20px;border-radius:8px;font-family:'Inter',sans-serif;font-size:.93rem;font-weight:600;cursor:pointer;transition:background .15s;display:flex;align-items:center;justify-content:center;gap:8px}
-.btn-submit:hover{background:var(--accent-h)}
+.btn-submit{width:100%;background:var(--cta);color:#fff;border:none;padding:14px 20px;border-radius:8px;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;transition:background .15s,box-shadow .15s;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 4px 14px rgba(22,163,74,.3)}
+.btn-submit:hover{background:var(--cta-h);box-shadow:0 6px 20px rgba(22,163,74,.4)}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .form-note{text-align:center;font-size:.76rem;color:var(--ink3);margin-top:10px}
 .form-ok{display:none;text-align:center;padding:20px 0}
@@ -359,8 +361,8 @@ footer{background:var(--ink);padding:40px 24px}
     <div class="caso">
       <div class="caso-n">05</div>
       <div class="caso-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-      <h3>Licença de utilização</h3>
-      <p>Precisa de obter ou regularizar a licença para arrendar, vender ou escriturar.</p>
+      <h3>Autorização de utilização</h3>
+      <p>Precisa de obter ou regularizar a autorização de utilização para arrendar, vender ou escriturar. Com o novo RJUE (DL 108/2026) pode bastar comunicação prévia.</p>
     </div>
   </div>
 </section>
@@ -463,7 +465,7 @@ footer{background:var(--ink);padding:40px 24px}
   <div class="faq-wrap">
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Preciso de arquitecto para licenciar obras?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Sim, para a maioria das obras. Qualquer intervenção que altere a estrutura, fachada, área útil ou uso do imóvel precisa de projecto de arquitectura assinado por um arquitecto inscrito na Ordem e de aprovação da Câmara. Obras de conservação simples (pintura, troca de revestimentos) geralmente não precisam.</div>
+      <div class="faq-a">Sim, para a maioria das obras. Qualquer intervenção que altere a estrutura, fachada, área útil ou uso do imóvel precisa de projecto de arquitectura assinado por um arquitecto inscrito na Ordem e de aprovação da Câmara. Obras de conservação simples (pintura, troca de revestimentos) geralmente não precisam. Com o DL 108/2026 algumas obras de reconstrução fiel passaram a estar isentas de licença ou comunicação prévia — avaliamos caso a caso.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Quanto custa um licenciamento?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
@@ -471,7 +473,7 @@ footer{background:var(--ink);padding:40px 24px}
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Quanto tempo demora um licenciamento na Câmara?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-      <div class="faq-a">Depende do tipo de processo e do município. Comunicações prévias são decididas em regra em 20 dias úteis. Licenças de obras demoram entre 3 a 8 meses. Em zonas de protecção patrimonial pode demorar mais. Acompanhamos de perto para evitar que o processo fique parado.</div>
+      <div class="faq-a">Depende do tipo de processo e do município. Com o novo RJUE (DL 108/2026) existem três modalidades: licença, comunicação prévia e comunicação prévia com prazo. Os procedimentos de comunicação prévia são mais rápidos; licenças de obras demoram tipicamente vários meses. Em zonas de protecção patrimonial os prazos são mais longos. Acompanhamos de perto para evitar que o processo fique parado.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)" aria-expanded="false">Tenho obras feitas sem licença. Consigo regularizar?<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
